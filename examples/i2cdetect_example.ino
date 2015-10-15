@@ -1,6 +1,6 @@
 
 #include <Wire.h>
-#include "i2cdetect.h"
+#include <i2cdetect.h>
 
 void setup() {
   Wire.begin();

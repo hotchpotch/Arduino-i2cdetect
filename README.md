@@ -7,7 +7,7 @@ Arduino-i2cdetect is scan an I2C bus for devices. Arduino-i2cdetect output same 
 
 ```
 #include <Wire.h>
-#include "i2cdetect.h"
+#include <i2cdetect.h>
 
 void setup() {
   Wire.begin();
