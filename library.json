@@ -1,0 +1,13 @@
+{
+  "name": "i2cdetect",
+  "keywords": "i2c, i2cdetect",
+  "description": "Arduino-i2cdetect is scan an I2C bus for devices.",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/hotchpotch/Arduino-i2cdetect.git"
+  },
+  "frameworks": "arduino",
+  "platforms": "atmelavr",
+  "examples": "examples/*.ino"
+}
