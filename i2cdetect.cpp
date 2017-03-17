@@ -21,7 +21,7 @@ void _printf(const char *format, ...)
   va_end(ap);
 }
 
-void i2cdetect(uint8_t first, uint8_t last) {
+void i2cdetect(TwoWire &wire, uint8_t first, uint8_t last) {
   uint8_t i, j, address, error;
 
   // header
@@ -36,8 +36,8 @@ void i2cdetect(uint8_t first, uint8_t last) {
     for (i = 0; i < 16; i++) {
       address = i + j*16;
       if (address >= first && address <= last) {
-        Wire.beginTransmission(address);
-        error = Wire.endTransmission();
+        wire.beginTransmission(address);
+        error = wire.endTransmission();
         if (error) {
           Serial.print(" --");
         } else {
